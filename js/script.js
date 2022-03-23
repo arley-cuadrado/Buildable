@@ -42,9 +42,6 @@ function selectItem(data) {
         console.log(data.rows[i].title)
     }
 
-
-
-
     var items = window.location.search;
     var urlParams = new URLSearchParams(items);
     var idParam = urlParams.get('idMovie');
@@ -69,14 +66,14 @@ function selectItem(data) {
 
     if (idParam == null) {
         empty.innerHTML = `
-            <img src="../images/empty.svg" alt="">
+            <img src="https://arley-cuadrado.github.io/Buildable-test/images/empty.svg" alt="Empty">
             <strong>No results yet...</strong>
         `
     } else {
         resultsItem.innerHTML = `
             <div class="flex-style">
                 <strong>ID: ${idParam}</strong>
-                <p>${raParam} <img src="../images/star.svg" /></p>
+                <p>${raParam} <img src="https://arley-cuadrado.github.io/Buildable-test/images/star.svg" alt="Star" /></p>
             </div>
             <div class="movie-title">
                 <h2>${tiParam}</h2>
