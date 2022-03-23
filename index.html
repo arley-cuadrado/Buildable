@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/styles.css">
+      <title>Buildable test</title>
+   </head>
+   <body class="bg-home">
+      <main>
+         <section class="up-section">
+            <div class="profile-style profile-up-mobile">
+               <img src="./images/profile.svg" alt="user profile">
+               <div class="account">
+                  <p>Owner account</p>
+                  <h3>Arley Cuadrado</h3>
+               </div>
+            </div>
+            <aside class="left-side">
+               <div class="profile-style">
+                  <img src="./images/profile.svg" alt="user profile">
+                  <div class="account">
+                     <p>Owner account</p>
+                     <h3>Arley Cuadrado</h3>
+                  </div>
+               </div>
+               <div class="search-style">
+                  <input class="main-input-style" type="text" placeholder="Find your movie..." id="inputFocus" onkeydown="looking()" />
+                  <label class="submit" type="submit" id="btn" /> <img src="./images/search.svg" alt="" onclick="functionFilter();"></label>
+                  <div class="triangle-width">
+                     <div id="triangle-up"></div>
+                  </div>
+                  <div id="list" class="list">
+                     <div id="results" class="results"></div>
+                  </div>
+               </div>
+            </aside>
+            <aside class="rigth-side">
+               <h1>
+                  Find your <strong>favorite movie</strong> right here!
+               </h1>
+            </aside>
+         </section>
+         <section class="down-section">
+            <div class="data-style">
+               <div class="empty" id="empty"></div>
+               <div id="resultsItem"></div>
+            </div>
+         </section>
+      </main>
+      <script src="./js/script.js"></script>
+   </body>
+</html>
+
